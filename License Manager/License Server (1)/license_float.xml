@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license id="7f7adb32-af4d-4025-8cf8-e7b3e2d630da" expiration="9999-12-31T23:59:59.9999999" type="Floating" email="k_venkatesh@cb.amrita.edu" mac="028aba19-5914-4a80-ae83-09707ae34541" limit="60">
+  <name>amrita</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>rlFthP/bN9W/c2TkCCVBbRcvDW0=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>Os6Y6gGN7tjZEnxPoJIjBzl5imp4uvLw1/Kma8NWi8KDnp+g2iOTVNjjcKQG+jBFU24MUL+2BrDtlKKHwYIoWubqNiHOHI4H2xvPadyUL9Mxi7GNyH9z/VOLhDBqFLdQLyDqCVaHXHI6c1T2FVB1KMeSh3TMXKALHDQbqhyHnUM=</SignatureValue>
+  </Signature>
+</license>

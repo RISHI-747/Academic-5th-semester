@@ -1,0 +1,229 @@
+-> Buzzer ON Program
+
+Description:
+This program continuously turns ON the buzzer connected to P0.10.
+
+#include <LPC214x.h>
+
+int main(void)
+{
+    PINSEL0 = 0X00000000;
+    IO0DIR  = 0X00000400;
+    IOPIN0  = 0X00000000;
+
+    while(1)
+    {
+        IOPIN0 = 0X00000400;
+    }
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> Buzzer with Switch
+
+Description:
+This program turns ON the buzzer when the switch connected to P1.25 is pressed and turns it OFF otherwise.
+
+#include <LPC214x.h>
+
+int main(void)
+{
+    PINSEL2 = 0X00000000;
+    PINSEL0 = 0X00000000;
+    IO0DIR  = 0X00000400;
+
+    while(1)
+    {
+        if(IOPIN1 & 0X02000000)
+        {
+            IOPIN0 = 0X00000400;
+        }
+        else
+        {
+            IOPIN0 = 0X00000000;
+        }
+    }
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> Buzzer with Timer
+
+Description:
+This program continuously blinks the buzzer with equal ON and OFF delays.
+
+#include <LPC214x.h>
+
+void delay(int x);
+
+int main(void)
+{
+    PINSEL0 = 0X00000000;
+    IODIR0  = 0X00000400;
+
+    while(1)
+    {
+        IOPIN0 = 0X00000400;
+        delay(1000);
+
+        IOPIN0 = 0X00000000;
+        delay(1000);
+    }
+}
+
+void delay(int x)
+{
+    unsigned int y, z;
+
+    for(y=x; y>0; y--)
+        for(z=0; z<x; z++);
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> LED ON Program
+
+Description:
+This program continuously turns ON the LEDs connected to Port 1.
+
+#include <LPC214x.h>
+
+int main(void)
+{
+    PINSEL2 = 0X00000000;
+    IO1DIR  = 0X00FF0000;
+    IOPIN1  = 0X00000000;
+
+    while(1)
+    {
+        IOPIN1 = 0X00FE0000;
+    }
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> LED with Switch
+
+Description:
+This program turns ON the LEDs when the switch is pressed and turns them OFF otherwise.
+
+#include <LPC214x.h>
+
+int main(void)
+{
+    PINSEL2 = 0X00000000;
+    IODIR1  = 0X00FF0000;
+    IOPIN1  = 0X01000000;
+
+    while(1)
+    {
+        if(IOPIN1 & 0X01000000)
+        {
+            IOPIN1 = 0X00FE0000;
+        }
+        else
+        {
+            IOPIN1 = 0X00FF0000;
+        }
+    }
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> LED Blinking Program
+
+Description:
+This program continuously blinks all LEDs with a delay.
+
+#include <LPC214x.h>
+
+void delay(int x);
+
+int main(void)
+{
+    PINSEL2 = 0X00000000;
+    IODIR1  = 0X00FF0000;
+    IOPIN1  = 0X00000000;
+
+    while(1)
+    {
+        IOPIN1 = 0X00000000;
+        delay(1000);
+
+        IOPIN1 = 0X00FF0000;
+        delay(1000);
+    }
+}
+
+void delay(int x)
+{
+    unsigned int y, z;
+
+    for(y=x; y>0; y--)
+        for(z=0; z<x; z++);
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+-> Experiment 2 : LED Blink
+
+Description:
+This program blinks all LEDs connected to Port 1 using a software delay.
+
+#include <LPC214x.h>
+
+void delay(int x);
+
+int main(void)
+{
+    PINSEL2 = 0X00000000;
+    IODIR1  = 0X00FF0000;
+    IOPIN1  = 0X00000000;
+
+    while(1)
+    {
+        IOPIN1 = 0X00000000;
+        delay(1000);
+
+        IOPIN1 = 0X00FF0000;
+        delay(1000);
+    }
+}
+
+void delay(int x)
+{
+    unsigned int y, z;
+
+    for(y=x; y>0; y--)
+    {
+        for(z=0; z<x; z++);
+    }
+}
+
+
+
+--------------------------------------------------------------

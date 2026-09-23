@@ -1,0 +1,1 @@
+[TwoR_Arm_tree, ARM_Info] = importrobot('Two_R_Planar_Model_with_subsytems.slx')

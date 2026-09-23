@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license id="196a91ac-7fcb-4ba2-84e1-79594a4ebd2f" expiration="9999-12-31T23:59:59.9999999" type="Subscription" email="sanketpatil4463@gmail.com" mac="f0300265-dca7-47e6-b435-4d5e76317fad">
+  <name>Sanket</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>hW/+7Ggmfvjf7I8l8k4zeL8cdMg=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>UJ2h/7RQHKVPdMXG3oTFoker/xynXYiYfI/ZbxlpL4LArPesTjdt/MC4+W547OCpFYt7mjIqyvUPqsRD8Yn2ogMY1lrPLDyYah+x5uK/LEUQOq7JvBPtsAbnhDSAOmB5XcOp3iIJgrVAhr8yxw4KFa9nC3Jw3oFJvXD7PW9uYuw=</SignatureValue>
+  </Signature>
+</license>
